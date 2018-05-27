@@ -1,13 +1,50 @@
 {
-  "name": "eslint-plugin-snakecase",
-  "version": "0.0.1",
+  "name": "eslint-plugin-snakecasejs",
+  "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
-  "author": "David Buchan-Swanson <david.buchanswanson@gmail.com>",
+  "author": "Patryk Rzucidlo [@ptkdev] <support@ptkdev.io> (https://ptkdev.it)",
+  "author_original": "David Buchan-Swanson <david.buchanswanson@gmail.com>",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/ptkdev",
+  "bugs": {
+    "url": "https://github.com/ptkdev/eslint-plugin-snakecasejs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ptkdev/eslint-plugin-snakecasejs.git"
+  },
   "scripts": {
-    "test": "node ./test"
+    "start": "node index.js",
+    "test": "node test.js",
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore --fix",
+    "precommit-lint-check": "echo 'Pre-commit lint checks...' && exit 0"
+  },
+  "pre-commit": [
+    "precommit-lint-check",
+    "lint"
+  ],
+  "keywords": [
+    "ptkdev",
+    "snake_case",
+    "snakecase",
+    "eslint"
+  ],
+  "dependencies": {
+    "colors": "^1.2.1",
+    "eslint": "^4.19.1",
+    "path": "^0.12.7",
+    "request": "^2.85.0"
+  },
+  "engines": {
+    "node": ">=7.6.0"
   },
   "devDependencies": {
-    "eslint": "^3.13.1"
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-snakecasejs": "^1.0.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "pre-commit": "^1.2.2"
   }
 }

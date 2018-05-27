@@ -1,5 +1,5 @@
-function isClassUsage(node) {
-    return ['FunctionDeclaration', 'NewExpression', 'MemberExpression'].indexOf(node.parent.type) > -1;
+function is_class_usage(node) {
+    return ["FunctionDeclaration", "NewExpression", "MemberExpression"].indexOf(node.parent.type) > -1;
 }
 
 function contains(a, obj) {
@@ -13,7 +13,7 @@ function contains(a, obj) {
 
 module.exports = {
     rules: {
-        snakecase: {
+        snakecasejs: {
             meta: {
                 fixable: true,
             },
@@ -25,12 +25,11 @@ module.exports = {
                         var split = name.split(/(?=[A-Z])/);
                         var split_az = name.split(/(?=[a-z])/);
                         if ((split.length > 1 && split_az.length > 1) && !contains(array_system_var, name)) {
-                            if (isClassUsage(node)) {
+                            if (is_class_usage(node)) {
                                 return true;
                             }
-                            // this has some uppercase letters
                             context.report({
-                                message: 'Identifiers must be snake case: {{ identifier }}',
+                                message: "Identifiers must be snake_case: {{ identifier }}",
                                 node: node,
                                 data: {
                                     identifier: node.name,
@@ -38,11 +37,11 @@ module.exports = {
                                 // fix(fixer) {
                                 //   return fixer.replaceText(node, split.map(function(piece){ return piece.replace('_', '').toLowerCase(); }).join('_'));
                                 // }
-                            })
+                            });
                         }
                     }
-                }
+                };
             }
         }
     }
-}
+};
