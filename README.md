@@ -39,10 +39,12 @@ This is to enforce a style of snake_case in your project, rather than just disab
     }
 }
 ```
+NOTE: switch `error` to `warn` if you don't need snake_case as mandatory rules.
+
 For advanced configuration see [INSTALL.md](https://github.com/ptkdev/eslint-plugin-snakecasejs/blob/master/INSTALL.md).
 
-<p align="center"><h1 align="center">License</h1></p>
+<h1>License</h1>
 
-<p align="center">GNU GENERAL PUBLIC LICENSE</p>
+GNU GENERAL PUBLIC LICENSE
 
-<p align="center">Copyright (c) 2018 Patryk Rzucidło (PTKDev)</p>
+Copyright (c) 2018 Patryk Rzucidło (PTKDev)
