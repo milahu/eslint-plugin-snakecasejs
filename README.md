@@ -1,3 +1,5 @@
+<p align="center"><a href="https://www.npmjs.com/package/eslint-plugin-snakecasejs" alt="Logo"><img src="https://ptkdev.it/img/github/eslintplugin_snakecasejs.png"></a></p>
+
 <p align="center"><h1 align="center">ESLint Plugin snake_case.js</h1></p>
 
 <p align="center"><a href="#" alt="License"><img src="https://img.shields.io/badge/license-GLPv3-brightgreen.svg"></a>
