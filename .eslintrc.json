@@ -18,7 +18,10 @@
     {
         "indent": [
             "error",
-            4
+            4,
+            {
+                "SwitchCase": 1
+            }
         ],
         "linebreak-style": [
             "error",
@@ -38,6 +41,6 @@
         "no-constant-condition": [
             "warn"
         ],
-        "snakecasejs/snakecasejs": "error"
+        "snakecasejs/snakecasejs": "warn"
     }
 }

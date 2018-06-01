@@ -42,7 +42,7 @@ This is to enforce a style of snake_case in your project, rather than just disab
 }
 ```
 3. If work add star :star: at this project :heart:
-4. If you want help me: <b><a href="http://paypal.ptkdev.io">donate on paypal</a> or become a <a href="http://patreon.ptkdev.io">backer on patreon</a></b>.
+4. If you want help me: <b><a href="http://paypal.ptkdev.io"></b>donate on paypal</a> or become a <b><a href="http://patreon.ptkdev.io">backer on patreon</a></b>.
 
 NOTE: switch `error` to `warn` if you don't need snake_case as mandatory rules.
 
