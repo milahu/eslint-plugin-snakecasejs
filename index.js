@@ -18,6 +18,10 @@ try {
     eslintrc = [];
 }
 
+if(typeof eslintrc.rules["snakecasejs/whitelist"] == "undefined"){
+    eslintrc.rules["snakecasejs/whitelist"] = [];
+}
+
 function is_class_usage(node) {
     return ["FunctionDeclaration", "NewExpression", "MemberExpression"].indexOf(node.parent.type) > -1;
 }
