@@ -5,7 +5,7 @@
 	"eslint": "^4.19.1",
 },
 "devDependencies": {
-	"eslint-plugin-snakecasejs": "^1.0.0",
+	"eslint-plugin-snakecasejs": "^1.1.0",
 }
 ```
 2. Create `.eslintrc.json` file with:
@@ -16,7 +16,8 @@
     ],
     "rules":
     {
-        "snakecasejs/snakecasejs": "error"
+        "snakecasejs/snakecasejs": "error",
+        "snakecasejs/whitelist": []
     }
 }
 ```

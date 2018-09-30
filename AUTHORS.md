@@ -10,5 +10,5 @@
 # David Buchan-Swanson david.buchanswanson@gmail.com
 [![https://github.com/deecewan](https://avatars0.githubusercontent.com/u/4755785?s=150&v=4)](https://github.com/deecewan)
 
-`Developer - Jan 12, 2017`
+`Original Developer - Jan 12, 2017`
 * GitHub: [https://github.com/deecewan](https://github.com/deecewan)

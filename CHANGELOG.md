@@ -1,3 +1,9 @@
+# v1.1.0 (October 01, 2018)
+
+* Feature: whitelist array on `eslintrc.json` 
+* License: now is MIT
+
+
 # v1.0.1 (June 02, 2018)
 
 * New: logo from [freepik](https://it.freepik.com/) (premium account)
