@@ -1,14 +1,7 @@
 #### Setup
-1. Add dependencies on `package.json`
-```
-"dependencies": {
-	"eslint": "^4.19.1",
-},
-"devDependencies": {
-	"eslint-plugin-snakecasejs": "^1.1.0",
-}
-```
-2. Create `.eslintrc.json` file with:
+1. Install eslint: `npm install eslint -g`
+2. Install snakecasejs plugin in your project: `npm install eslint-plugin-snakecasejs --save-dev`
+3. Create `.eslintrc.json` file with:
 ```
 {
     "plugins": [
@@ -21,3 +14,5 @@
     }
 }
 ```
+4. If it works add a star :star: at this project :heart:
+5. If you want to help me: **[donate on paypal](http://paypal.ptkdev.io)** or become a **[backer on patreon](http://patreon.ptkdev.io)**.

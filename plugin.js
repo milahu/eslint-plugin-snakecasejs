@@ -1,14 +1,11 @@
 /**
- * snakecasejs
+ * ESLint: snakecasejs
  * =====================
  * This is to enforce a style of snake_case in your project, rather than just disabling camelcase.
  *
  * @author:     Patryk Rzucidlo [@ptkdev] <support@ptkdev.io> (https://ptkdev.it)
  * @original:   David Buchan-Swanson <david.buchanswanson@gmail.com>
  * @license:    This code and contributions have 'MIT License'
- * @version:    1.1.0
- * @changelog:  1.0.0 initial release
- * 				1.1.0 add whitelist
  *
  */
 let eslintrc = null;
@@ -18,14 +15,32 @@ try {
     eslintrc = [];
 }
 
-if(typeof eslintrc.rules["snakecasejs/whitelist"] == "undefined"){
+/**
+ * Whitelist exist?
+ * =====================
+ * Set empry array if whitelist is undefined in eslintrc
+ *
+ */
+if (typeof eslintrc.rules["snakecasejs/whitelist"] == "undefined") {
     eslintrc.rules["snakecasejs/whitelist"] = [];
 }
 
-function is_class_usage(node) {
+/**
+ * Detect var and function
+ * =====================
+ * Filter code, find funcrions name and variables
+ *
+ */
+function filter(node) {
     return ["FunctionDeclaration", "NewExpression", "MemberExpression"].indexOf(node.parent.type) > -1;
 }
 
+/**
+ * Detect function and variables name
+ * =====================
+ * Filter code, find functions name and variables
+ *
+ */
 module.exports = {
     rules: {
         snakecasejs: {
@@ -36,22 +51,31 @@ module.exports = {
                 return {
                     Identifier(node) {
                         var name = node.name;
+
+                        // ignore javascript language function
                         var array_system_var = ["parseInt", "parseFloat", "isNaN", "isFinite", "decodeURI", "decodeURIComponent", "encodeURI", "toString", "toLocaleString", "valueOf", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "indexOf", "forEach", "charAt", "charCodeAt", "endsWith", "lastIndexOf", "startsWith", "toLowerCase", "toLocaleLowerCase", "toUpperCase", "toLocaleUpperCase", "toFixed", "toPrecision", "setInterval", "clearInterval", "setTimeout", "toDateString", "toTimeString", "getTime", "getFullYear", "getUTCFullYear", "getMonth", "getUTCMonth", "getDate", "getUTCDate", "getDay", "getUTCDay", "getHours", "getUTCHours", "getMinutes", "getUTCMinutes", "getSeconds", "getUTCSeconds", "getMilliseconds", "getUTCMilliseconds", "getTimeZoneOffset", "setTime", "setMilliseconds", "setUTCMilliseconds", "setSeconds", "setUTCSeconds", "setMinutes", "setUTCMinutes", "setHours", "setUTCHours", "setDate", "setUTCDate", "setMonth", "setUTCMonth", "setFullYear", "setUTCFullYear", "toUTCString", "toISOString", "toJSON"];
+
                         var split = name.split(/(?=[A-Z])/);
                         var split_az = name.split(/(?=[a-z])/);
+
+                        // detect camelCase
                         if ((split.length > 1 && split_az.length > 1) && !array_system_var.includes(name) && !eslintrc.rules["snakecasejs/whitelist"].includes(name)) {
-                            if (is_class_usage(node)) {
+                            if (filter(node)) {
                                 return true;
                             }
+
+                            // error message on ide
                             context.report({
                                 message: "Identifiers must be snake_case: {{ identifier }}",
                                 node: node,
                                 data: {
                                     identifier: node.name,
                                 },
-                                // fix(fixer) {
-                                //   return fixer.replaceText(node, split.map(function(piece){ return piece.replace('_', '').toLowerCase(); }).join('_'));
-                                // }
+
+                                // --fix eslint param: detect camelCase and convert in snake_case
+                                fix(fixer) {
+                                    return fixer.replaceText(node, node.name.split(/(?=[A-Z])/).join("_").toLowerCase());
+                                }
                             });
                         }
                     }

@@ -2,10 +2,9 @@
 
 Replace the values below with your own:
 
-- **Plugin Version:** v1.0.0
+- **Plugin Version:** v1.2.0
 - **Node Version:** v8.9 (Plugin require >= 7.6)
 - **Operating System:** Ubuntu 14.04
-- **Browser:** Google Chrome 64
 
 
 ### Expected Behavior

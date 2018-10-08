@@ -6,8 +6,6 @@
  * @author:     Patryk Rzucidlo [@ptkdev] <support@ptkdev.io> (https://ptkdev.it)
  * @original:   David Buchan-Swanson <david.buchanswanson@gmail.com>
  * @license:    This code and contributions have 'MIT License'
- * @version:    1.0.0
- * @changelog:  1.0.0 initial release
  *
  */
 var rule_tester = require("eslint").RuleTester;

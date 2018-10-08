@@ -1,3 +1,8 @@
+# v1.2.0 (October 08, 2018)
+
+* Feature: eslint --fix param, auto replace camelCase to snake_case
+
+
 # v1.1.0 (October 01, 2018)
 
 * Feature: whitelist array on `eslintrc.json` 
