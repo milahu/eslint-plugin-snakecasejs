@@ -11,9 +11,6 @@
         "sourceType": "module",
         "ecmaVersion": 2017
     },
-    "plugins": [
-        "snakecasejs"
-    ],
     "rules":
     {
         "indent": [
@@ -45,8 +42,6 @@
         "brace-style": ["error", "1tbs",
         {
             "allowSingleLine": false
-        }],
-        "snakecasejs/snakecasejs": "warn",
-        "snakecasejs/whitelist": []
+        }]
     }
 }

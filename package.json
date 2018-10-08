@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-snakecasejs",
   "description": "Eslint plugin to enforce a style of snake_case in your project, rather than just disabling camelCase.",
-  "version": "1.2.0",
+  "version": "1.2.0-2",
   "main": "plugin.js",
   "author": "Patryk Rzucidlo [@ptkdev] <support@ptkdev.io> (https://ptkdev.it)",
   "author_original": "David Buchan-Swanson <david.buchanswanson@gmail.com>",
@@ -43,12 +43,6 @@
     "node": ">=7.6.0"
   },
   "devDependencies": {
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-snakecasejs": "latest",
-    "eslint-plugin-standard": "^3.1.0",
     "pre-commit": "^1.2.2"
   }
 }
