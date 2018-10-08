@@ -18,7 +18,7 @@ This is to enforce a style of snake_case in your project, rather than just disab
 * [✓] Whitelist array for methods or variables with camelCase syntax from other libraries/npm package.
 
 ## Fast setup
-1. Install eslint: `npm install eslint -g`
+1. Install eslint: `npm install eslint --save`
 2. Install snakecasejs plugin: `npm install eslint-plugin-snakecasejs --save-dev`
 3. Create `.eslintrc.json` file with:
 ```
