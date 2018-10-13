@@ -1,3 +1,8 @@
+# v1.2.1 (October 14, 2018)
+
+* Update: docs and misprint in README.md
+
+
 # v1.2.0 (October 08, 2018)
 
 * Feature: eslint --fix parameter, auto replace camelCase to snake_case
