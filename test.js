@@ -1,9 +1,9 @@
 /**
  * snakecasejs
  * =====================
- * This is to enforce a style of snake_case in your project, rather than just disabling camelcase.
+ * This is to enforce a style of snake_case in your project, rather than just disabling camelCase.
  *
- * @author:     Patryk Rzucidlo [@ptkdev] <support@ptkdev.io> (https://ptkdev.it)
+ * @author:     Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptkdev.it)
  * @original:   David Buchan-Swanson <david.buchanswanson@gmail.com>
  * @license:    This code and contributions have 'MIT License'
  *

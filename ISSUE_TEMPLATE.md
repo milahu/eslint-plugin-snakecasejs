@@ -33,6 +33,6 @@ much detail as possible.
 2. ...
 3. ...
 
-### Screenshots (Optional)
+### Screenshot (Optional)
 
 If the error is graphical in nature it is helpful to provide a screenshot. 

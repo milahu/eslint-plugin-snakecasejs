@@ -1,9 +1,9 @@
 /**
  * ESLint: snakecasejs
  * =====================
- * This is to enforce a style of snake_case in your project, rather than just disabling camelcase.
+ * This is to enforce a style of snake_case in your project, rather than just disabling camelCase.
  *
- * @author:     Patryk Rzucidlo [@ptkdev] <support@ptkdev.io> (https://ptkdev.it)
+ * @author:     Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptkdev.it)
  * @original:   David Buchan-Swanson <david.buchanswanson@gmail.com>
  * @license:    This code and contributions have 'MIT License'
  *
@@ -18,7 +18,7 @@ try {
 /**
  * Whitelist exist?
  * =====================
- * Set empry array if whitelist is undefined in eslintrc
+ * Set empty array if whitelist is undefined in eslintrc
  *
  */
 if (typeof eslintrc.rules["snakecasejs/whitelist"] == "undefined") {
@@ -28,7 +28,7 @@ if (typeof eslintrc.rules["snakecasejs/whitelist"] == "undefined") {
 /**
  * Detect var and function
  * =====================
- * Filter code, find funcrions name and variables
+ * Filter code, find functions name and variables
  *
  */
 function filter(node) {
@@ -72,7 +72,7 @@ module.exports = {
                                     identifier: node.name,
                                 },
 
-                                // --fix eslint param: detect camelCase and convert in snake_case
+                                // --fix eslint parameter: detect camelCase and convert in snake_case
                                 fix(fixer) {
                                     return fixer.replaceText(node, node.name.split(/(?=[A-Z])/).join("_").toLowerCase());
                                 }

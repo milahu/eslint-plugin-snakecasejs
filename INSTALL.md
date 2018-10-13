@@ -1,5 +1,5 @@
 #### Setup
-1. Install eslint: `npm install eslint --save`
+1. Install eslint: `npm install eslint --save-dev`
 2. Install snakecasejs plugin: `npm install eslint-plugin-snakecasejs --save-dev`
 3. Create `.eslintrc.json` file with:
 ```

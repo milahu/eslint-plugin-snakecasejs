@@ -1,4 +1,4 @@
-# Patryk Rzucidlo (@ptkdev) support@ptkdev.io
+# Patryk Rzucidło (@ptkdev) support@ptkdev.io
 [![https://ptkdev.it](https://ptkdev.it/img/ptkdev_patryk_rzucidlo_avatar_150.png)](https://ptkdev.it)
 
 `Lead Developer - May 27, 2018`

@@ -1,6 +1,6 @@
 # v1.2.0 (October 08, 2018)
 
-* Feature: eslint --fix param, auto replace camelCase to snake_case
+* Feature: eslint --fix parameter, auto replace camelCase to snake_case
 
 
 # v1.1.0 (October 01, 2018)
