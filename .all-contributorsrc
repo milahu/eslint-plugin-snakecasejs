@@ -1,0 +1,30 @@
+{
+	"projectName": "eslint-plugin-snakecasejs",
+	"projectOwner": "ptkdev",
+	"files": [
+		"README.md"
+	],
+	"imageSize": 100,
+	"commit": true,
+	"contributors": [
+		{
+			"login": "ptkdev",
+			"name": "Patryk Rzucidło",
+			"avatar_url": "https://avatars1.githubusercontent.com/u/442844?v=4",
+			"profile": "https://ptk.dev",
+			"contributions": [
+				"code"
+			]
+		},
+		{
+			"login": "deecewan",
+			"name": "David Buchan-Swanson",
+			"avatar_url": "https://avatars1.githubusercontent.com/u/4755785?v=4",
+			"profile": "https://deecewan.github.io",
+			"contributions": [
+				"code"
+			]
+		}
+	],
+	"contributorsPerLine": 6
+}
