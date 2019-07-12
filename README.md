@@ -2,7 +2,7 @@
 
 # 🐍 ESLint Plugin: snakecasejs
 
-[![](https://img.shields.io/badge/version-v2.0.0-lightgrey.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/releases) [![](https://img.shields.io/npm/v/eslint-plugin-snakecasejs.svg)](https://www.npmjs.com/package/eslint-plugin-snakecasejs) [![](https://img.shields.io/badge/license-MIT-brightgreen.svg)](#) [![](https://img.shields.io/badge/ES-9-F7DF1E.svg)](https://wikipedia.org/wiki/ECMAScript) [![](https://img.shields.io/badge/powered%20by-eslint-46aef7.svg)](https://www.npmjs.com/package/eslint) [![](https://snyk.io/test/npm/eslint-plugin-snakecasejs/badge.svg)](https://snyk.io/test/github/eslint-plugin-snakecasejs)
+[![](https://img.shields.io/badge/version-v2.0.1-lightgrey.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/releases) [![](https://img.shields.io/npm/v/eslint-plugin-snakecasejs.svg)](https://www.npmjs.com/package/eslint-plugin-snakecasejs) [![](https://img.shields.io/badge/license-MIT-brightgreen.svg)](#) [![](https://img.shields.io/badge/ES-9-F7DF1E.svg)](https://wikipedia.org/wiki/ECMAScript) [![](https://img.shields.io/badge/powered%20by-eslint-46aef7.svg)](https://www.npmjs.com/package/eslint) [![](https://snyk.io/test/npm/eslint-plugin-snakecasejs/badge.svg)](https://snyk.io/test/github/eslint-plugin-snakecasejs)
 
 > ESLint Plugin to enforce a style of snake_case in your project, rather than just disabling camelCase.
 
@@ -61,12 +61,12 @@ Fix command support whitelist. Run this command in your project directory:
 **WARNING:** You need install eslint globally for this feature: `npm install eslint -g`
 
 ## 📋 White list
-Ignore words, variables, methods, class name without snake_case syntax. Add to settings: `"snakecasejs/whitelist": ["NewPageClass"]` with array of variables or method with camelCase that you can not convert to snake_case (example: for external library naming convention).
+Ignore variables without snake_case syntax. Add to settings: `"snakecasejs/whitelist": ["NewPageClass"]` with array of variables with camelCase that you can not convert to snake_case (example: for external library naming convention).
 
 Plugin ignore check on this words. Example: `"snakecasejs/whitelist": ["externalPath","setNumber"]`
 
 ## 🚬 Filter
-Overwrite default filters what you want include to lint (class name, function name, etc...). Add to settings: `"snakecasejs/filter": []` with array of declaration and expression, default value: `["FunctionDeclaration", "NewExpression", "MemberExpression"]`
+Ignore checks for class declarations, methods, etc... Add to settings: `"snakecasejs/filter": []` with array of eslint expression or declaration, default value: `["ClassDeclaration", "NewExpression"]` for better compatibility with camel case class.
 
 ## 📚 Documentation
 Run `npm run docs`

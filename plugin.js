@@ -35,7 +35,7 @@ if (typeof eslintrc.settings["snakecasejs/whitelist"] === "undefined") {
  *
  */
 if (typeof eslintrc.settings["snakecasejs/filter"] === "undefined" || eslintrc.settings["snakecasejs/filter"] === []) {
-	eslintrc.settings["snakecasejs/filter"] = ["FunctionDeclaration", "NewExpression", "MemberExpression"];
+	eslintrc.settings["snakecasejs/filter"] = ["ClassDeclaration", "NewExpression"];
 }
 
 /**
@@ -70,7 +70,7 @@ module.exports = {
 						var name = node.name;
 
 						// ignore javascript language default function
-						var array_system_var = ["parseInt", "parseFloat", "isNaN", "isFinite", "decodeURI", "decodeURIComponent", "encodeURI", "toString", "toLocaleString", "valueOf", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "indexOf", "forEach", "charAt", "charCodeAt", "endsWith", "lastIndexOf", "startsWith", "toLowerCase", "toLocaleLowerCase", "toUpperCase", "toLocaleUpperCase", "toFixed", "toPrecision", "setInterval", "clearInterval", "setTimeout", "toDateString", "toTimeString", "getTime", "getFullYear", "getUTCFullYear", "getMonth", "getUTCMonth", "getDate", "getUTCDate", "getDay", "getUTCDay", "getHours", "getUTCHours", "getMinutes", "getUTCMinutes", "getSeconds", "getUTCSeconds", "getMilliseconds", "getUTCMilliseconds", "getTimeZoneOffset", "setTime", "setMilliseconds", "setUTCMilliseconds", "setSeconds", "setUTCSeconds", "setMinutes", "setUTCMinutes", "setHours", "setUTCHours", "setDate", "setUTCDate", "setMonth", "setUTCMonth", "setFullYear", "setUTCFullYear", "toUTCString", "toISOString", "toJSON", "encodeURIComponent", "EventEmitter"];
+						var array_system_var = ["parseInt", "parseFloat", "isNaN", "isFinite", "decodeURI", "decodeURIComponent", "encodeURI", "toString", "toLocaleString", "valueOf", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "indexOf", "forEach", "charAt", "charCodeAt", "endsWith", "lastIndexOf", "startsWith", "toLowerCase", "toLocaleLowerCase", "toUpperCase", "toLocaleUpperCase", "toFixed", "toPrecision", "setInterval", "clearInterval", "setTimeout", "toDateString", "toTimeString", "getTime", "getFullYear", "getUTCFullYear", "getMonth", "getUTCMonth", "getDate", "getUTCDate", "getDay", "getUTCDay", "getHours", "getUTCHours", "getMinutes", "getUTCMinutes", "getSeconds", "getUTCSeconds", "getMilliseconds", "getUTCMilliseconds", "getTimeZoneOffset", "setTime", "setMilliseconds", "setUTCMilliseconds", "setSeconds", "setUTCSeconds", "setMinutes", "setUTCMinutes", "setHours", "setUTCHours", "setDate", "setUTCDate", "setMonth", "setUTCMonth", "setFullYear", "setUTCFullYear", "toUTCString", "toISOString", "toJSON", "encodeURIComponent", "EventEmitter", "innerHTML", "waitForSelector", "readFileSync", "readFileAsync", "querySelector", "querySelectorAll", "appendFile", "getTimezoneOffset"];
 
 						var split = name.split(/(?=[A-Z])/);
 						var split_az = name.split(/(?=[a-z])/);
@@ -83,7 +83,7 @@ module.exports = {
 
 							// error message on ide
 							context.report({
-								message: "Identifiers must be snake_case: {{ identifier }}",
+								message: `Identifiers must be snake_case: {{ identifier }} (${node.parent.type})`,
 								node: node,
 								data: {
 									identifier: node.name,

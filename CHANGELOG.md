@@ -1,3 +1,8 @@
+# v2.0.1 (July 12, 2019)
+* Fix: snakecasejs/filter changed defalt values and docs
+* Update: variables es5 and es6 with camelCase
+
+
 # v2.0.0 (July 04, 2019)
 * Support: ESLint v6.0
 * Moved snakecasejs/whitelist to settings section of `.eslintrc.json`
