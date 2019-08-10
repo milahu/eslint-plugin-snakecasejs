@@ -2,14 +2,16 @@
 
 # 🐍 ESLint Plugin: snakecasejs
 
-[![](https://img.shields.io/badge/version-v2.0.1-lightgrey.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/releases) [![](https://img.shields.io/npm/v/eslint-plugin-snakecasejs.svg)](https://www.npmjs.com/package/eslint-plugin-snakecasejs) [![](https://img.shields.io/badge/license-MIT-brightgreen.svg)](#) [![](https://img.shields.io/badge/ES-9-F7DF1E.svg)](https://wikipedia.org/wiki/ECMAScript) [![](https://img.shields.io/badge/powered%20by-eslint-46aef7.svg)](https://www.npmjs.com/package/eslint) [![](https://snyk.io/test/npm/eslint-plugin-snakecasejs/badge.svg)](https://snyk.io/test/github/eslint-plugin-snakecasejs)
+[![](https://img.shields.io/badge/version-v2.0.3-lightgrey.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/releases) [![](https://img.shields.io/npm/v/eslint-plugin-snakecasejs.svg)](https://www.npmjs.com/package/eslint-plugin-snakecasejs) [![](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/blob/master/LICENSE.md) [![](https://img.shields.io/badge/ES-9-F7DF1E.svg)](https://wikipedia.org/wiki/ECMAScript) [![](https://img.shields.io/badge/powered%20by-eslint-46aef7.svg)](https://www.npmjs.com/package/eslint) [![](https://snyk.io/test/npm/eslint-plugin-snakecasejs/badge.svg)](https://snyk.io/test/github/eslint-plugin-snakecasejs)
 
 > ESLint Plugin to enforce a style of snake_case in your project, rather than just disabling camelCase.
 
 ## 🎁 Support: Donate
 > This project is **free**, **open source** and I try to provide excellent **free support**. Why donate? I work on this project several hours in my spare time and try to keep it up to date and working. **THANK YOU!**
 
-[![](https://img.shields.io/badge/donate-paypal-005EA6.svg)](http://paypal.ptkdev.io) [![](https://img.shields.io/badge/donate-patreon-F87668.svg)](http://patreon.ptkdev.io) [![](https://img.shields.io/badge/buy%20me-coffee-4B788C.svg)](http://coffee.ptkdev.io)
+[![](https://img.shields.io/badge/donate-paypal-005EA6.svg)](https://www.paypal.me/ptkdev) [![](https://img.shields.io/badge/donate-patreon-F87668.svg)](https://www.patreon.com/ptkdev) [![](https://img.shields.io/badge/buy%20me-coffee-4B788C.svg)](https://ko-fi.com/ptkdev)
+
+![](https://img.shields.io/badge/bitcoin-35jQmZCy4nsxoMM3QPFrnZePDVhdKaHMRH-E38B29.svg) ![](https://img.shields.io/badge/ethereum-0x8b8171661bEb032828e82baBb0B5B98Ba8fBEBFc-4E8EE9.svg)
 
 ## 📎 Menu
 - 💡 [Features](#-features)
@@ -38,8 +40,8 @@
     ],
     "settings":
     {
-        "snakecasejs/filter": ["FunctionDeclaration", "NewExpression", "MemberExpression"],
-        "snakecasejs/whitelist": ["NewPage", "AssocArrayClass"]
+        "snakecasejs/filter": ["ClassDeclaration", "NewExpression"],
+        "snakecasejs/whitelist": ["externalPath", "setNumber"]
     },
     "rules":
     {
@@ -48,7 +50,7 @@
 }
 ```
 4. If it works add a star 🌟 at this project ❤️
-5. If you want to help me: **donate on [paypal](http://paypal.ptkdev.io)/[ko-fi](http://coffee.ptkdev.io)** or become a **[backer on patreon](http://patreon.ptkdev.io)**.
+5. If you want to help me: **donate on [paypal](https://www.paypal.me/ptkdev)/[ko-fi](https://ko-fi.com/ptkdev)** or become a **[backer on patreon](https://www.patreon.com/ptkdev)**.
 
 NOTE: switch `error` to `warn` if you don't need snake_case as mandatory rule.
 
@@ -61,25 +63,25 @@ Fix command support whitelist. Run this command in your project directory:
 **WARNING:** You need install eslint globally for this feature: `npm install eslint -g`
 
 ## 📋 White list
-Ignore variables without snake_case syntax. Add to settings: `"snakecasejs/whitelist": ["NewPageClass"]` with array of variables with camelCase that you can not convert to snake_case (example: for external library naming convention).
+Ignore variables, methods, etc... without snake_case syntax. Add to settings: `"snakecasejs/whitelist": ["NewPageClass"]` with array of variables with camelCase that you can not convert to snake_case (example: for external library naming convention).
 
-Plugin ignore check on this words. Example: `"snakecasejs/whitelist": ["externalPath","setNumber"]`
+Plugin ignore check on this variables/methods. Example: `"snakecasejs/whitelist": ["externalPath","setNumber"]`
 
 ## 🚬 Filter
-Ignore checks for class declarations, methods, etc... Add to settings: `"snakecasejs/filter": []` with array of eslint expression or declaration, default value: `["ClassDeclaration", "NewExpression"]` for better compatibility with camel case class.
+Ignore global checks for class declarations, all methods, etc... Add to settings: `"snakecasejs/filter": []` with array of eslint expression or declaration, default value: `["ClassDeclaration", "NewExpression"]` for better compatibility with camel case class.
 
 ## 📚 Documentation
 Run `npm run docs`
 
-## 👑 Sponsors (max 10 available)
-Support this project by becoming a sponsor. 🙏 Become a sponsor on [patreon](http://patreon.ptkdev.io). Your logo will show up here with a link to your website.
+## 👑 Sponsors
+Support this project by becoming a sponsor. 🙏 Become a sponsor on [patreon](https://www.patreon.com/join/ptkdev) or become top3 sponsor on [ko-fi](https://ko-fi.com/ptkdev). Your logo will show up here with a link to your website.
 
-[![](https://sponsors.ptkdev.io/1/avatar.png)](https://sponsors.ptkdev.io/1/website) [![](https://sponsors.ptkdev.io/2/avatar.png)](https://sponsors.ptkdev.io/2/website) [![](https://sponsors.ptkdev.io/3/avatar.png)](https://sponsors.ptkdev.io/3/website) [![](https://sponsors.ptkdev.io/4/avatar.png)](https://sponsors.ptkdev.io/4/website) [![](https://sponsors.ptkdev.io/5/avatar.png)](https://sponsors.ptkdev.io/5/website) [![](https://sponsors.ptkdev.io/6/avatar.png)](https://sponsors.ptkdev.io/6/website) [![](https://sponsors.ptkdev.io/7/avatar.png)](https://sponsors.ptkdev.io/7/website) [![](https://sponsors.ptkdev.io/8/avatar.png)](https://sponsors.ptkdev.io/8/website) [![](https://sponsors.ptkdev.io/9/avatar.png)](https://sponsors.ptkdev.io/9/website) [![](https://sponsors.ptkdev.io/10/avatar.png)](https://sponsors.ptkdev.io/10/website) [![](https://sponsors.ptkdev.io/11/avatar.png)](https://sponsors.ptkdev.io/11/website) [![](https://sponsors.ptkdev.io/12/avatar.png)](https://sponsors.ptkdev.io/12/website) [![](https://sponsors.ptkdev.io/13/avatar.png)](https://sponsors.ptkdev.io/13/website) [![](https://sponsors.ptkdev.io/14/avatar.png)](https://sponsors.ptkdev.io/14/website) [![](https://sponsors.ptkdev.io/15/avatar.png)](https://sponsors.ptkdev.io/15/website)
+[![](https://api.ptkdev.io/backers/sponsor1.png)](https://api.ptkdev.io/backers/sponsor1.html) [![](https://api.ptkdev.io/backers/sponsor2.png)](https://api.ptkdev.io/backers/sponsor2.html) [![](https://api.ptkdev.io/backers/sponsor-kofi1.png)](https://api.ptkdev.io/backers/sponsor-kofi1.html) [![](https://api.ptkdev.io/backers/sponsor-kofi2.png)](https://api.ptkdev.io/backers/sponsor-kofi2.html) [![](https://api.ptkdev.io/backers/sponsor-kofi3.png)](https://api.ptkdev.io/backers/sponsor-kofi3.html) [![](https://api.ptkdev.io/backers/sponsor3.png)](https://api.ptkdev.io/backers/sponsor3.html) [![](https://api.ptkdev.io/backers/sponsor4.png)](https://api.ptkdev.io/backers/sponsor4.html) [![](https://api.ptkdev.io/backers/sponsor5.png)](https://api.ptkdev.io/backers/sponsor5.html) [![](https://api.ptkdev.io/backers/sponsor6.png)](https://api.ptkdev.io/backers/sponsor6.html) [![](https://api.ptkdev.io/backers/sponsor7.png)](https://api.ptkdev.io/backers/sponsor7.html) [![](https://api.ptkdev.io/backers/sponsor8.png)](https://api.ptkdev.io/backers/sponsor8.html) [![](https://api.ptkdev.io/backers/sponsor9.png)](https://api.ptkdev.io/backers/sponsor9.html) [![](https://api.ptkdev.io/backers/sponsor10.png)](https://api.ptkdev.io/backers/sponsor10.html) [![](https://api.ptkdev.io/backers/sponsor11.png)](https://api.ptkdev.io/backers/sponsor11.html) [![](https://api.ptkdev.io/backers/sponsor12.png)](https://api.ptkdev.io/backers/sponsor12.html) [![](https://api.ptkdev.io/backers/sponsor13.png)](https://api.ptkdev.io/backers/sponsor13.html) [![](https://api.ptkdev.io/backers/sponsor14.png)](https://api.ptkdev.io/backers/sponsor14.html) [![](https://api.ptkdev.io/backers/sponsor15.png)](https://api.ptkdev.io/backers/sponsor15.html)
 
 ## 🦄 Backers
-Thank you to all our backers! 🙏 Become a backer on [patreon](http://patreon.ptkdev.io).
+Thank you to all our backers! 🙏 Become a backer on [patreon](https://www.patreon.com/join/ptkdev).
 
-[![](https://backers.ptkdev.io/1/avatar.png)](https://backers.ptkdev.io/1/website) [![](https://backers.ptkdev.io/2/avatar.png)](https://backers.ptkdev.io/2/website) [![](https://backers.ptkdev.io/3/avatar.png)](https://backers.ptkdev.io/3/website) [![](https://backers.ptkdev.io/4/avatar.png)](https://backers.ptkdev.io/4/website) [![](https://backers.ptkdev.io/5/avatar.png)](https://backers.ptkdev.io/5/website) [![](https://backers.ptkdev.io/6/avatar.png)](https://backers.ptkdev.io/6/website) [![](https://backers.ptkdev.io/7/avatar.png)](https://backers.ptkdev.io/7/website) [![](https://backers.ptkdev.io/8/avatar.png)](https://backers.ptkdev.io/8/website) [![](https://backers.ptkdev.io/9/avatar.png)](https://backers.ptkdev.io/9/website) [![](https://backers.ptkdev.io/10/avatar.png)](https://backers.ptkdev.io/10/website) [![](https://backers.ptkdev.io/11/avatar.png)](https://backers.ptkdev.io/11/website) [![](https://backers.ptkdev.io/12/avatar.png)](https://backers.ptkdev.io/12/website) [![](https://backers.ptkdev.io/13/avatar.png)](https://backers.ptkdev.io/13/website) [![](https://backers.ptkdev.io/14/avatar.png)](https://backers.ptkdev.io/14/website) [![](https://backers.ptkdev.io/15/avatar.png)](https://backers.ptkdev.io/15/website)
+[![](https://api.ptkdev.io/backers/backer1.png)](https://api.ptkdev.io/backers/backer1.html) [![](https://api.ptkdev.io/backers/backer2.png)](https://api.ptkdev.io/backers/backer2.html) [![](https://api.ptkdev.io/backers/backer3.png)](https://api.ptkdev.io/backers/backer3.html) [![](https://api.ptkdev.io/backers/backer4.png)](https://api.ptkdev.io/backers/backer4.html) [![](https://api.ptkdev.io/backers/backer5.png)](https://api.ptkdev.io/backers/backer5.html) [![](https://api.ptkdev.io/backers/backer6.png)](https://api.ptkdev.io/backers/backer6.html) [![](https://api.ptkdev.io/backers/backer7.png)](https://api.ptkdev.io/backers/backer7.html) [![](https://api.ptkdev.io/backers/backer8.png)](https://api.ptkdev.io/backers/backer8.html) [![](https://api.ptkdev.io/backers/backer9.png)](https://api.ptkdev.io/backers/backer9.html) [![](https://api.ptkdev.io/backers/backer10.png)](https://api.ptkdev.io/backers/backer10.html) [![](https://api.ptkdev.io/backers/backer11.png)](https://api.ptkdev.io/backers/backer11.html) [![](https://api.ptkdev.io/backers/backer12.png)](https://api.ptkdev.io/backers/backer12.html) [![](https://api.ptkdev.io/backers/backer13.png)](https://api.ptkdev.io/backers/backer13.html) [![](https://api.ptkdev.io/backers/backer14.png)](https://api.ptkdev.io/backers/backer14.html) [![](https://api.ptkdev.io/backers/backer15.png)](https://api.ptkdev.io/backers/backer15.html)
 
 ## ❤️ Contributing
 I 💟 contributions! I will happily accept your pull request! Translations, grammatical corrections (GrammarNazi you are welcome! Yes my English is bad, sorry), etc... Do not be afraid, if the code is not perfect we will work together 👯 and remember to insert your name in `.all-contributorsrc` and `package.json` file.
@@ -100,18 +102,19 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 > 💰 In the future, if the donations allow it, I would like to share some of the success with those who helped me the most. For me open source is share of code, share development knowledges and share donations!
 
 ## 📲 Tools
-[![](https://img.shields.io/badge/app-social%20manager%20tools-ff7f19.svg)](http://socialmanager.tools/)
-[![](https://img.shields.io/badge/api-instagram%20bot-895a4d.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs)
-[![](https://img.shields.io/badge/api-twitter%20bot-21B7F4.svg)](https://github.com/ptkdev/socialmanagertools-twbot)
-[![](https://img.shields.io/badge/api-facebook%20bot-3b5998.svg)](https://github.com/ptkdev/socialmanagertools-fbbot)
-[![](https://img.shields.io/badge/telegram%20bot-feed%20rss%20for%20wordpress%20&amp;%20medium-00AB6C.svg)](https://github.com/ptkdev/ptkdev-tgbot)
-
+[![](https://img.shields.io/badge/portfolio-ptkdev-000000.svg)](https://ptk.dev/)
 [![](https://img.shields.io/badge/app-meingifs-E1215B.svg)](https://meingifs.pics/)
 [![](https://img.shields.io/badge/stickers-ptkdev-128C7E.svg)](https://stickers.ptkdev.io/)
 
+[![](https://img.shields.io/badge/app-social%20manager%20tools-ff7f19.svg)](http://socialmanager.tools/)
+[![](https://img.shields.io/badge/api-instagram%20bot-895a4d.svg)](https://github.com/social-manager-tools/socialmanagertools-igbot)
+[![](https://img.shields.io/badge/api-twitter%20bot-21B7F4.svg)](https://github.com/social-manager-tools/socialmanagertools-twbot)
+[![](https://img.shields.io/badge/api-facebook%20bot-3b5998.svg)](https://github.com/social-manager-tools/socialmanagertools-fbbot)
+[![](https://img.shields.io/badge/telegram%20bot-feed%20rss%20for%20wordpress%20&amp;%20medium-00AB6C.svg)](https://github.com/social-manager-tools/socialmanagertools-tgbot)
+
 ## 💫 License
 * Code and Contributions have **MIT License**
-* Images and logos have **CC BY-NC 4.0 License**
+* Images and logos have **CC BY-NC 4.0 License** ([Freepik](https://it.freepik.com/) Premium License)
 * Documentations and Translations have **CC BY 4.0 License**
 
 ###### Copyleft (c) 2018-2019 [Patryk Rzucidło](https://ptk.dev) ([@PTKDev](https://twitter.com/ptkdev)) <[support@ptkdev.io](mailto:support@ptkdev.io)>

@@ -1,3 +1,11 @@
+# v2.0.3 (August 10, 2019)
+* Update: docs and misprint in README.md
+
+
+# v2.0.2 (July 15, 2019)
+* Update: docs and misprint in README.md
+
+
 # v2.0.1 (July 12, 2019)
 * Fix: snakecasejs/filter changed defalt values and docs
 * Update: variables es5 and es6 with camelCase
