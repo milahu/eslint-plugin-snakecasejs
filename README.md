@@ -89,14 +89,18 @@ I 💟 contributions! I will happily accept your pull request! Translations, gra
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://ptk.dev"><img src="https://avatars1.githubusercontent.com/u/442844?v=4" width="100px;" alt="Patryk Rzucidło"/><br /><sub><b>Patryk Rzucidło</b></sub></a><br /><a href="https://github.com/ptkdev/eslint-plugin-snakecasejs/commits?author=ptkdev" title="Code">💻</a></td>
-    <td align="center"><a href="https://deecewan.github.io"><img src="https://avatars1.githubusercontent.com/u/4755785?v=4" width="100px;" alt="David Buchan-Swanson"/><br /><sub><b>David Buchan-Swanson</b></sub></a><br /><a href="https://github.com/ptkdev/eslint-plugin-snakecasejs/commits?author=deecewan" title="Code">💻</a></td>
+    <td align="center"><a href="https://ptk.dev"><img src="https://avatars1.githubusercontent.com/u/442844?v=4" width="100px;" alt=""/><br /><sub><b>Patryk Rzucidło</b></sub></a><br /><a href="https://github.com/ptkdev/eslint-plugin-snakecasejs/commits?author=ptkdev" title="Code">💻</a></td>
+    <td align="center"><a href="https://deecewan.github.io"><img src="https://avatars1.githubusercontent.com/u/4755785?v=4" width="100px;" alt=""/><br /><sub><b>David Buchan-Swanson</b></sub></a><br /><a href="https://github.com/ptkdev/eslint-plugin-snakecasejs/commits?author=deecewan" title="Code">💻</a></td>
+    <td align="center"><a href="https://rozpuszczalny.com"><img src="https://avatars1.githubusercontent.com/u/7627635?v=4" width="100px;" alt=""/><br /><sub><b>Tomasz Domański</b></sub></a><br /><a href="https://github.com/ptkdev/eslint-plugin-snakecasejs/commits?author=rozpuszczalny" title="Code">💻</a></td>
   </tr>
 </table>
 
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 > 💰 In the future, if the donations allow it, I would like to share some of the success with those who helped me the most. For me open source is share of code, share development knowledges and share donations!

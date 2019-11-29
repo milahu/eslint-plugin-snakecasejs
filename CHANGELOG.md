@@ -1,3 +1,7 @@
+# [Unreleased]
+* Update: get settings from context rather that two levels up eslintrc.
+
+
 # v2.0.3 (August 10, 2019)
 * Update: docs and misprint in README.md
 

@@ -9,48 +9,15 @@
  * @license: This code and contributions have 'MIT License'
  *
  */
-let eslintrc = null;
-try {
-	eslintrc = require("./../../.eslintrc");
-} catch (err) {
-	eslintrc = [];
-}
 
 /**
- * Whitelist exist?
- * =====================
- * Set empty array if whitelist is undefined in eslintrc
- *
+ * Default list of names allowed to be camel cased
  */
-if (typeof eslintrc.settings["snakecasejs/whitelist"] === "undefined") {
-	eslintrc.settings["snakecasejs/whitelist"] = [];
-}
-
+const defaultWhitelist = [];
 /**
- * Filter exist?
- * =====================
- * Set array with what you want to lint: function, class, etc...
- *
- * @link: https://eslint.org/docs/rules/indent
- *
+ * Default list of parent node types, that allows node to be camel cased
  */
-if (typeof eslintrc.settings["snakecasejs/filter"] === "undefined" || eslintrc.settings["snakecasejs/filter"] === []) {
-	eslintrc.settings["snakecasejs/filter"] = ["ClassDeclaration", "NewExpression"];
-}
-
-/**
- * Detect var and function
- * =====================
- * Filter code, find functions name and variables
- *
- * @param {Object} node - eslint node object
- *
- * @return {Boolean} true/false - exist type in filter array?
- *
- */
-function filter (node) {
-	return eslintrc.settings["snakecasejs/filter"].indexOf(node.parent.type) > -1;
-}
+const defaultFilter = ["ClassDeclaration", "NewExpression"];
 
 /**
  * Detect function and variables name
@@ -65,6 +32,21 @@ module.exports = {
 				fixable: true,
 			},
 			create (context) {
+				const rawWhitelist = context.settings["snakecasejs/whitelist"];
+				const whitelist = Array.isArray(rawWhitelist) ? rawWhitelist : defaultWhitelist;
+				const rawSettings = context.settings["snakecasejs/filter"];
+				const settings = Array.isArray(rawSettings) ? rawSettings : defaultFilter;
+
+				/**
+				 * Indicates if current node should be ignored for error report
+				 *
+				 * @param {Object} node - eslint node object
+				 *
+				 * @return {Boolean} true/false - exist type in filter array?
+				 *
+				 */
+				const filter = (node) => settings.includes(node.parent.type);
+
 				return {
 					Identifier (node) {
 						var name = node.name;
@@ -76,7 +58,7 @@ module.exports = {
 						var split_az = name.split(/(?=[a-z])/);
 
 						// detect camelCase
-						if ((split.length > 1 && split_az.length > 1) && !array_system_var.includes(name) && !eslintrc.settings["snakecasejs/whitelist"].includes(name)) {
+						if ((split.length > 1 && split_az.length > 1) && !array_system_var.includes(name) && !whitelist.includes(name)) {
 							if (filter(node)) {
 								return true;
 							}

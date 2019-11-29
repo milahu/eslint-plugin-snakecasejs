@@ -24,6 +24,15 @@
 			"contributions": [
 				"code"
 			]
+		},
+		{
+			"login": "rozpuszczalny",
+			"name": "Tomasz Domański",
+			"avatar_url": "https://avatars1.githubusercontent.com/u/7627635?v=4",
+			"profile": "https://rozpuszczalny.com",
+			"contributions": [
+				"code"
+			]
 		}
 	],
 	"contributorsPerLine": 6
