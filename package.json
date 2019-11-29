@@ -62,6 +62,7 @@
 		"markserv": "latest"
 	},
 	"contributors": [
-		"David Buchan-Swanson [@deecewan] <david.buchanswanson@gmail.com>"
+		"David Buchan-Swanson [@deecewan] <david.buchanswanson@gmail.com>",
+		"Tomasz Domański [@rozpuszczalny] <github@tomaszdomanski.com>"
 	]
 }
