@@ -1,4 +1,4 @@
-# [Unreleased]
+# v2.1.0 (December 04, 2019)
 * Update: get settings from context rather that two levels up eslintrc.
 
 

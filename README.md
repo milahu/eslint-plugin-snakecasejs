@@ -2,7 +2,7 @@
 
 # 🐍 ESLint Plugin: snakecasejs
 
-[![](https://img.shields.io/badge/version-v2.0.3-lightgrey.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/releases) [![](https://img.shields.io/npm/v/eslint-plugin-snakecasejs.svg)](https://www.npmjs.com/package/eslint-plugin-snakecasejs) [![](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/blob/master/LICENSE.md) [![](https://img.shields.io/badge/ES-9-F7DF1E.svg)](https://wikipedia.org/wiki/ECMAScript) [![](https://img.shields.io/badge/powered%20by-eslint-46aef7.svg)](https://www.npmjs.com/package/eslint) [![](https://snyk.io/test/npm/eslint-plugin-snakecasejs/badge.svg)](https://snyk.io/test/github/eslint-plugin-snakecasejs)
+[![](https://img.shields.io/badge/version-v2.1.0-lightgrey.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/releases) [![](https://img.shields.io/npm/v/eslint-plugin-snakecasejs.svg)](https://www.npmjs.com/package/eslint-plugin-snakecasejs) [![](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/blob/master/LICENSE.md) [![](https://img.shields.io/badge/ES-9-F7DF1E.svg)](https://wikipedia.org/wiki/ECMAScript) [![](https://img.shields.io/badge/powered%20by-eslint-46aef7.svg)](https://www.npmjs.com/package/eslint) [![](https://snyk.io/test/npm/eslint-plugin-snakecasejs/badge.svg)](https://snyk.io/test/github/eslint-plugin-snakecasejs)
 
 > ESLint Plugin to enforce a style of snake_case in your project, rather than just disabling camelCase.
 

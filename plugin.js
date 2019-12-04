@@ -5,19 +5,16 @@
  *
  * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptkdev.it)
  *                David Buchan-Swanson <david.buchanswanson@gmail.com>
+ *                Tomasz Domański [@rozpuszczalny] <github@tomaszdomanski.com> (https://tomaszdomanski.com)
  *
  * @license: This code and contributions have 'MIT License'
  *
  */
 
-/**
- * Default list of names allowed to be camel cased
- */
-const defaultWhitelist = [];
-/**
- * Default list of parent node types, that allows node to be camel cased
- */
-const defaultFilter = ["ClassDeclaration", "NewExpression"];
+// Default list of names allowed to be camel cased
+const default_whitelist = [];
+// Default list of parent node types, that allows node to be camel cased
+const default_filter = ["ClassDeclaration", "NewExpression"];
 
 /**
  * Detect function and variables name
@@ -32,10 +29,10 @@ module.exports = {
 				fixable: true,
 			},
 			create (context) {
-				const rawWhitelist = context.settings["snakecasejs/whitelist"];
-				const whitelist = Array.isArray(rawWhitelist) ? rawWhitelist : defaultWhitelist;
-				const rawSettings = context.settings["snakecasejs/filter"];
-				const settings = Array.isArray(rawSettings) ? rawSettings : defaultFilter;
+				const raw_whitelist = context.settings["snakecasejs/whitelist"];
+				const whitelist = Array.isArray(context.settings["snakecasejs/whitelist"]) ? raw_whitelist : default_whitelist;
+				const raw_settings = context.settings["snakecasejs/filter"];
+				const settings = Array.isArray(context.settings["snakecasejs/filter"]) ? raw_settings : default_filter;
 
 				/**
 				 * Indicates if current node should be ignored for error report
