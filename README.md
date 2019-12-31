@@ -2,7 +2,7 @@
 
 # 🐍 ESLint Plugin: snakecasejs
 
-[![](https://img.shields.io/badge/version-v2.1.0-lightgrey.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/releases) [![](https://img.shields.io/npm/v/eslint-plugin-snakecasejs.svg)](https://www.npmjs.com/package/eslint-plugin-snakecasejs) [![](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/blob/master/LICENSE.md) [![](https://img.shields.io/badge/ES-9-F7DF1E.svg)](https://wikipedia.org/wiki/ECMAScript) [![](https://img.shields.io/badge/powered%20by-eslint-46aef7.svg)](https://www.npmjs.com/package/eslint) [![](https://snyk.io/test/npm/eslint-plugin-snakecasejs/badge.svg)](https://snyk.io/test/github/eslint-plugin-snakecasejs)
+[![](https://img.shields.io/badge/version-v2.2.0-lightgrey.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/releases) [![](https://img.shields.io/npm/v/eslint-plugin-snakecasejs.svg)](https://www.npmjs.com/package/eslint-plugin-snakecasejs) [![](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ptkdev/eslint-plugin-snakecasejs/blob/master/LICENSE.md) [![](https://img.shields.io/badge/ES-9-F7DF1E.svg)](https://wikipedia.org/wiki/ECMAScript) [![](https://img.shields.io/badge/powered%20by-eslint-46aef7.svg)](https://www.npmjs.com/package/eslint) [![](https://snyk.io/test/npm/eslint-plugin-snakecasejs/badge.svg)](https://snyk.io/test/github/eslint-plugin-snakecasejs)
 
 > ESLint Plugin to enforce a style of snake_case in your project, rather than just disabling camelCase.
 
@@ -15,6 +15,13 @@
 
 ## 📎 Menu
 - 💡 [Features](#-features)
+- 🚀 [How to use](#-fast-setup)
+- 🧩 Configs:
+	- 🔧 [--fix](#---fix)
+	- 📋 [whitelist](#-white-list)
+	- 🚬 [filters](#-filter)
+- 📚 [Documentation](#-documentation)
+- ❤️ [Contributing](#-contributing)
 - 🐛 [Known Bugs](https://github.com/ptkdev/eslint-plugin-snakecasejs/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 - 🍻 Community:
   - 🐔 [Discord](http://discord.ptkdev.io)
@@ -29,7 +36,7 @@
 * [✔️] Compatible with --fix (convert automatically camelCase to snake_case)
 * [✔️] White list array for methods or variables with camelCase syntax from other libraries/npm package.
 
-## 🔨 Fast setup
+## 🚀 Fast setup
 1. Install eslint: `npm install eslint --save-dev`
 2. Install snakecasejs plugin: `npm install eslint-plugin-snakecasejs --save-dev`
 3. Create `.eslintrc.json` file with:
