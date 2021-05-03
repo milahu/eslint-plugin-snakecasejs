@@ -1,6 +1,8 @@
 {
-	"projectName": "eslint-plugin-snakecasejs",
+	"projectName": "ptkdev-boilerplate/node-module-boilerplate",
 	"projectOwner": "ptkdev",
+	"repoType": "github",
+	"repoHost": "https://github.com",
 	"files": [
 		"README.md"
 	],
@@ -13,27 +15,13 @@
 			"avatar_url": "https://avatars1.githubusercontent.com/u/442844?v=4",
 			"profile": "https://ptk.dev",
 			"contributions": [
-				"code"
-			]
-		},
-		{
-			"login": "deecewan",
-			"name": "David Buchan-Swanson",
-			"avatar_url": "https://avatars1.githubusercontent.com/u/4755785?v=4",
-			"profile": "https://deecewan.github.io",
-			"contributions": [
-				"code"
-			]
-		},
-		{
-			"login": "rozpuszczalny",
-			"name": "Tomasz Domański",
-			"avatar_url": "https://avatars1.githubusercontent.com/u/7627635?v=4",
-			"profile": "https://rozpuszczalny.com",
-			"contributions": [
-				"code"
+				"code",
+				"translation",
+				"doc",
+				"bug"
 			]
 		}
 	],
-	"contributorsPerLine": 6
+	"contributorsPerLine": 6,
+	"commitConvention": "none"
 }
