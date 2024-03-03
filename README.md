@@ -42,6 +42,13 @@
 3. Create `.eslintrc.json` file with:
 ```json
 {
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+    },
+    "env": {
+        "es6": true
+    },
     "plugins": [
         "snakecasejs"
     ],
